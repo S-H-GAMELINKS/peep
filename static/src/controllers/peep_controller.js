@@ -18,18 +18,9 @@ export default class extends Controller {
 
         const url = `https://${this.urlTarget.value}/api/v1/streaming/public/local`
 
-        axios.get(this.data.get("url")).then((res) => {
+        axios.get(url).then((res) => {
             console.log(res);
-            this.talksTarget.innerHTML = res.data;
-        }, (error) => {
-            console.log(error);
-        })
-    }
-
-    submit() {
-        axios.post(this.data.get("url"), `${this.contentTarget.value}`).then((res) => {
-            this.contentTarget.value = "";
-            console.log(res);
+            this.tootsTarget.innerHTML = res.data;
         }, (error) => {
             console.log(error);
         })
