@@ -10,7 +10,7 @@
         </form>
 
         <p>
-            <button data-action="click->peep#load">Check</button>
+            <button data-action="click->peep#connect">Check</button>
         </p>
 
         <div data-target="peep.toots"></div>
