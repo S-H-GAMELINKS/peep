@@ -1,5 +1,5 @@
 <template>
-    <div data-controller="peep" data-peep-refresh-interval="5000">
+    <div data-controller="peep" data-peep-refresh-interval="100">
         <h1>Mastodon ローカルタイムライン覗き見ツール</h1>
 
         <form>
