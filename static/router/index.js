@@ -8,7 +8,7 @@ Vue.use(VueRouter)
 export default new VueRouter({
   mode: 'history',
   routes: [
-    { path: '/', component: Index },
-    { path: '/contact', component: Contact },
+    { path: '/peep/', component: Index },
+    { path: '/peep/contact', component: Contact },
   ],
 })
