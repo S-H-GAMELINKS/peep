@@ -14,18 +14,19 @@ export default class extends Controller {
         }
     }
 
+    disconnect() {
+        this.stopRefreshing()
+    }
+
     load() {
+        const url = `https://${this.urlTarget.value}/api/v1/streaming/public/local`
 
-        if (this.urlTarget.value !== "") {
-            const url = `https://${this.urlTarget.value}/api/v1/streaming/public/local`
-
-            axios.get(url).then((res) => {
-                console.log(res);
-                this.tootsTarget.innerHTML = res.data;
-            }, (error) => {
-                console.log(error);
-            })
-        }
+        axios.get(url).then((res) => {
+            console.log(res);
+            this.tootsTarget.innerHTML = res.data;
+        }, (error) => {
+            console.log(error);
+        })
     }
 
     startRefreshing() {
