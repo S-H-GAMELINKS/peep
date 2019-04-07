@@ -9,6 +9,10 @@
             </div>
         </form>
 
+        <p>
+            <button data-action="click->peep#load">Check</button>
+        </p>
+
         <div data-target="peep.toots"></div>
     </div>    
 </template>
